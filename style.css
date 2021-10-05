@@ -1,0 +1,41 @@
+header{
+    display:flex;
+
+}
+
+body{
+    display: flex ;
+    flex-direction: column; min-height: 100vh;
+    background-image: url("background.jpg")!important; 
+}
+
+main{
+    display:flex;
+    flex: 1;
+}
+
+article {
+    flex: 1;
+}
+
+nav {
+    
+    border-style: hidden;
+    border-width: 5px;
+background-color: rgb(40, 190, 108);
+
+}
+aside {
+    /*this is the colom width*/
+    flex: 0 012em;
+}
+
+  h1 {
+    border-style: hidden;
+    border-width: 5px;
+   background-color: rgb(40, 190, 108);
+   border-style: hidden;
+   border-width: 5px;
+   background-color: rgb(40, 190, 108);
+  }
+  
