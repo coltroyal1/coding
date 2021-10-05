@@ -38,4 +38,22 @@ aside {
    border-width: 5px;
    background-color: rgb(40, 190, 108);
   }
+
+  h4 {
+    border-style: hidden;
+    border-width: 5px;
+   background-color: rgb(40, 190, 108);
+   border-style: hidden;
+   border-width: 5px;
+   background-color: rgb(40, 190, 108);
+  }
+
+  h2 {
+    border-style: hidden;
+    border-width: 5px;
+   background-color: rgb(40, 190, 108);
+   border-style: hidden;
+   border-width: 5px;
+   background-color: rgb(40, 190, 108);
+  }
   
