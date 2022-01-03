@@ -13,4 +13,4 @@ const e = a * (b + b);
 const f = a * b / a;
 // 10
 const g = b / a * a;
-console.log(a, b, c, d, e, f, g);
+console.log(a, b, c, d, e, f, g)
