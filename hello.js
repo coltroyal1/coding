@@ -1,3 +1,3 @@
-const firstname = prompt("enter your first name here:");
-const lastname = prompt("enter your last name here:")
+const firstname = (prompt("enter first name :"));
+const lastname = (prompt("enter last name:"));
 alert("Hello, ${firstname} ${lastname}");

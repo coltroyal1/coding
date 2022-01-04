@@ -1,4 +1,4 @@
-const number = Number(prompt("Enter a number:"));
-if (number >= 0 ) {
-console.log(`${number} is positive`);
+var user = prompt("Enter your name, please:", "Bilbo Baggins");
+if (user != null) {
+    document.getElementById("greeting").innerHTML = "Greetings, " + user + "!";
 }
