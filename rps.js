@@ -21,13 +21,13 @@ if (userInput === cumputerInput){
     if ((userInput === "rock" && computerInput === "Scissord") ||
         (userInput === "scissors" && computerInput === "rock") ||
         (userInput === "paper" && computerInput === "rock")) {
-        return "win";
+        return "user";
     }
 
     else {
         return "computer";
     }
-}
+};
 let congratulate = function(Winner){
  if (Winner === "user"){
      cl("you win");
@@ -36,7 +36,11 @@ cl("sorry you lose");
  }else{
      cl("it's a tie");
  }
-}
+};
 let userInput = getUserInput();
 let computerInput = getRPS();
-cl("you chose" + userInput);
+cl("you chose " + userInput);
+cl("computer chose " + computerInput);
+let winner = getWinner(userInput, computerInput);
+congratulate(winner);
+
