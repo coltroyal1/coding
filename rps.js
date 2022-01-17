@@ -16,11 +16,9 @@ cl (getUserInput());
 let getWinner =function(userInput, cumputerInput){
 if (userInput === cumputerInput){
         return "tie";
-    };
-
-    if ((userInput === "rock" && computerInput === "Scissord") ||
-        (userInput === "scissors" && computerInput === "rock") ||
-        (userInput === "paper" && computerInput === "rock")) {
+    }else if ((userInput === "rock" && computerInput === "scissors") ||
+        (userInput === "paper" && computerInput === "rock") ||
+        (userInput === "scissor" && computerInput === "paper")) {
         return "user";
     }
 
@@ -28,19 +26,18 @@ if (userInput === cumputerInput){
         return "computer";
     }
 };
-let congratulate = function(Winner){
- if (Winner === "user"){
+let congratulate = function(winner){
+ if (winner === "user"){
      cl("you win");
- } else if(Winner === "computer"){
+ } else if(winner === "computer"){
 cl("sorry you lose");
  }else{
-     cl("it's a tie");
- }
+    cl("it's a tie");}
 };
+
 let userInput = getUserInput();
 let computerInput = getRPS();
-cl("you chose " + userInput);
-cl("computer chose " + computerInput);
+cl("You chose " + userInput);
+cl("Computer chose " + computerInput);
 let winner = getWinner(userInput, computerInput);
 congratulate(winner);
-
