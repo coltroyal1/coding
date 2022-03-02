@@ -85,10 +85,6 @@ let getRankName = function (rank) {
   }
 };
 
-
-
-
-
 let deck = buildDeck();
 
 let dealCard = function () {
@@ -98,38 +94,30 @@ let dealCard = function () {
 };
 
 let dealHand = function () {
-  return [dealCard(), dealCard(), ];
+  return [dealCard(), dealCard()];
 };
- 
-let createPlayer = function(name){
+
+let createPlayer = function (name) {
   return {
     name: name,
     hand: [],
-    wins: 0
-  }
+    wins: 0,
+  };
 };
+
+let Players = [newPlayer(player1), newPlayer(player2)];
 
 sortByRank(player1.hand);
 let highestCard = player1.hand[0];
 
-lat Players = [
-  newPlayer(player1),
-  newPlayer(player2)
-];
+sortByRank(player2.hand);
+let highestCard = player2.hand[0];
 
- let sortByRank(player1.hand)
-
-let countScore = function(hand) {
+let countScore = function (hand) {
   return hand[0].rank + hand[1].rank;
-}
+};
 
 console.table(deck);
 
 console.table(dealHand());
 console.table(dealHand());
-
-
-
-
-
-
