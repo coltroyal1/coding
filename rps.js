@@ -36,7 +36,7 @@ let congratulate = function (winner) {
   }
 };
 
-for (let index = 0; index < 100000; index++) {
+for (let index = 0; index < 1; index++) {
   let userInput = getUserInput();
   let computerInput = getRPS();
   cl("You chose " + userInput);
