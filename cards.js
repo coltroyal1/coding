@@ -100,34 +100,35 @@ let dealHand = function () {
 let createPlayer = function (name) {
   return {
     name: name,
-    hand: [],
+    hand: dealHand,
     wins: 0,
   };
 };
 
 let player1 = {
   name: "player1",
-  hand: dealHand(),
+  hand: dealHand,
   wins: 0,
 };
 
 let player2 = {
   name: "player2",
-  hand: dealHand(),
+  hand: dealHand,
   wins: 0,
 };
 
-let Players = [createPlayer(player1), createPlayer(player2)];
+let players = [createPlayer("player1"), createPlayer("player2")];
 
-let sortByRank = function(player1.dealHand){
-let highestCard = player1.hand[0];
+let sortByRank = function (players) {
+  return (highestCard = players.hand[0]);
 };
 
 let countScore = function (dealHand) {
-  return hand[0].rank + dealHand[1].rank;
+  return dealHand[0].rank + dealHand[1].rank;
 };
 
 console.table(deck);
 
 console.table(dealHand());
 console.table(dealHand());
+console.table(players);
