@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .answer {
+        font-weight: bold;
+        border: 4px dashed purple;
+        padding: 20px;
+      }
+    </style>
+    <div id="app">
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="app">
+      <h1>Hello</h1>
+      <p>What is your favorit suit</p>
+
+      <button @click="answer = hearts">Hearts</button>
+      <button @click="answer = dimonds">Dimonds</button>
+      <button @click="answer = spades">Spades</button>
+      <button @click="answer = clubs">Clubs</button>
+
+      <p class="answer" id="heartsAnwser" v-if="answer === hearts">
+        you said Hearts good for you.
+      </p>
+      <p class="answer" id="dimondsAnwser" v-if="answer === dimonds">
+        you said Dimonds good for you.
+      </p>
+      <p class="answer" id="spadesAnwser" v-if="answer === spades">
+        you said Spades thats my favorit to.
+      </p>
+      <p class="answer" id="clubsAnwser" v-if="answer === clubs">
+        you said Clubs good for you.
+      </p>
+    </div>
+
+    <script src="lib/vue.js"></script>
+    <script>
+      Vue.createApp({
+        data: function () {
+          return {
+            answer: null,
+          };
+        },
+      }).mount("#app");
+    </script>
+  </body>
+</html>
